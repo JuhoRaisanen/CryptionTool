@@ -101,20 +101,12 @@ int readInt(string text) {
 string readString(string text) {
 	
 	cout << text;
-	string temp, result;
+	string result;
 	
-	while (getline(cin, temp)){
-
-		result += temp;
+	getline(cin, result);
+	while (result.length() == 0) {
+		getline(cin, result);
 	}
-	
-	
-	/*
-		getline(cin, inputString);
-	while (inputString.length() == 0) {
-		getline(cin, inputString);
-	}
-	*/
 	
 	return result;
 }
