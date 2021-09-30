@@ -1,5 +1,11 @@
 #include "functions.h"
 
+/*
+
+Hello and welcome!
+
+*/
+
 unsigned char toUpper(unsigned char c) {
 
 	if(c >= 97 && c <= 122) { //letters a to z
